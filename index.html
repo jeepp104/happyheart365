@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657530999-L2PnPPeR" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "สวัสดีค่ะ",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "size": "full",
+        "url": "https://cdn.discordapp.com/attachments/989849306683027509/1030762517867278386/066.jpg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "❤️HAPPY HEART 365❤️",
+            "color": "#ffffff",
+            "size": "lg",
+            "weight": "bold",
+            "align": "center",
+            "decoration": "none",
+            "margin": "sm"
+          }
+        ],
+        "borderWidth": "bold",
+        "borderColor": "#ffffff",
+        "cornerRadius": "xxl",
+        "spacing": "none",
+        "margin": "md"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.discordapp.com/attachments/989849306683027509/1030770323345391636/062654.png",
+        "aspectRatio": "4:1",
+        "size": "full",
+        "margin": "sm",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/QwHEXbF"
+        }
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.discordapp.com/attachments/989849306683027509/1030770323852890202/676354e09d17cec8.png",
+        "aspectRatio": "4:1",
+        "size": "full",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://www.slotupdate168.com/"
+        }
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#e8cf68",
+      "endColor": "#fb61d3",
+      "centerColor": "#f291a5"
+    },
+    "cornerRadius": "xxl",
+    "borderWidth": "bold",
+    "borderColor": "#ffffff",
+    "paddingBottom": "none",
+    "paddingStart": "md",
+    "paddingEnd": "md"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
